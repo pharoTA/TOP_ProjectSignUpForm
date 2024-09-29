@@ -3,6 +3,78 @@
     padding: 0;
 }
 
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
 @font-face {
     font-family: 'Norse-Bold';
     font-weight: bold;
@@ -10,7 +82,6 @@
 }
 
 .pageContainer {
-    background-color: aqua;
     height: 100vh;
     display: flex;
 }
@@ -70,5 +141,114 @@
 }
 
 .mainContainer {
+    background-color: rgb(249, 250, 251);
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.catchLinesContainer {
+    display: flex;
+    background-color: rgb(249, 250, 251);
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 200%;
+    font-weight: 700;
+    font-size: larger;
+    margin: 2rem;
+    margin-right: 0;
+}
+
+.additionalCatchLine {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.formContainer {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    padding: 2rem;
+    box-shadow: 0px 5px 5px lightgray;
+}
+
+.formHeaderContainer {
+    font-weight: 200;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.formInputContainer {
+    display: flex;
+    gap: 5rem;
+}
+
+label {
+    font-family: 'Roboto';
+    font-size: small;
+}
+
+input {
+    width: 15rem;
+    border-radius: 5px;
+    line-height: 1.5rem;
+    border-color: rgb(237, 239, 241);
+    border-style: solid;
+    margin-bottom: 1rem;
+}
+
+input:hover,
+input:focus {
+    border-color: lightblue;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.formInputFirstCol,
+.formInputSecondCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitButtonContainer {
+    background-color: rgb(249, 250, 251);
+    height: 100%;
+    margin: 2rem;
+    margin-right: 0;
+}
+
+.submitButton {
+    border-radius: 5px;
+    padding: 0.5rem 2.5rem;
+    border-style: none;
+    cursor: pointer;
+    background-color: rgb(93, 108, 76);
+    color: white;
+    box-shadow: 0px 2px 2px rgb(93, 108, 76);
+    font-size: medium;
+}
+
+.passwordConfirm,
+.password {
+    margin-bottom: 0;
+    border-color: red;
+}
+
+.errorInputMessage {
+    font-size: smaller;
+    color: red;
+}
+
+.logInMessage {
+    padding: 2rem 0;
+}
+
+.loginInLink {
+    text-decoration: none;
+    color: rgb(93, 108, 76);
 }
