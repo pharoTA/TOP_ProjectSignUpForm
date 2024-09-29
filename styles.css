@@ -1,3 +1,77 @@
 * {
-    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    font-weight: bold;
+    src: url("src/Norse-Bold.otf") format("opentype");
+}
+
+.pageContainer {
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+}
+
+.illustrationContainer {
+    flex: 1;
+    background-image: url("src/background_img.jpg");
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.upperSection {
+    flex: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoBanner {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brandNameContainer {
+    color: white;
+    font-family: 'Norse-Bold';
+    height: 3rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.logoContainer {
+    background-image: url("src/odin-lined.png");
+    height: 75%;
+    width: 4rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.credentialContainer {
+    background-color: blue;
+    flex: 1;
+    color: white;
+}
+
+.credentialContainer a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.credentials {
+    align-items: end;
+}
+
+.mainContainer {
+    flex: 2;
 }
